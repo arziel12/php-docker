@@ -1,5 +1,5 @@
 
-FROM php:7.2
+FROM php:7.2-fpm
 
 RUN set -e && \
 	apt-get update && apt-get install --no-install-recommends -y \
