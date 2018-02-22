@@ -15,7 +15,7 @@ RUN set -e && \
         openssl \
         zlib1g-dev
 
-RUN docker-php-ext-install pdo pdo_mysql mysqli mcrypt zip bcmath
+RUN docker-php-ext-install pdo pdo_mysql mysqli zip bcmath
 
 # -----------------------------------------------
 # Composer
