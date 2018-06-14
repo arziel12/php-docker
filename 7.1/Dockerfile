@@ -13,7 +13,8 @@ RUN set -e && \
         telnet \
         unzip \
         openssl \
-        zlib1g-dev
+        zlib1g-dev \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install pdo pdo_mysql mysqli mcrypt zip bcmath
 
