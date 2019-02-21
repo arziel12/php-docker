@@ -14,6 +14,7 @@ RUN docker-php-ext-configure gd \
     	    --with-jpeg-dir=/usr/lib/x86_64-linux-gnu \
     	    --with-png-dir=/usr/lib/x86_64-linux-gnu \
     	    --with-freetype-dir=/usr/lib/x86_64-linux-gnu \
+    	    --with-webp-dir=/usr/lib/x86_64-linux-gnu \
     	&& docker-php-ext-install gd
 
 
