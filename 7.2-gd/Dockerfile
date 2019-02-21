@@ -6,6 +6,7 @@ RUN set -e && \
 		git \
 		zlib1g-dev \
 		libpng-dev \
+		libwebp-dev \
 		libjpeg-dev
 
 
