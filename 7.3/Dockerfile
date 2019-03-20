@@ -14,6 +14,7 @@ RUN set -e && \
         unzip \
         openssl \
         zlib1g-dev \
+        libzip \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install pdo pdo_mysql mysqli zip bcmath
