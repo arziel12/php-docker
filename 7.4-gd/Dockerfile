@@ -6,7 +6,7 @@
 # to regenerate
 # -------------------------------------------------------------
 
-FROM arziel/php:7.3
+FROM arziel/php:7.4
 
 
 

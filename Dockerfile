@@ -11,6 +11,7 @@ RUN set -e && \
         telnet \
         unzip \
         openssl \
+        libzip-dev \
         zlib1g-dev \
 	&& rm -rf /var/lib/apt/lists/*
 
@@ -60,6 +61,8 @@ RUN set -e \
 # -----------------------------------------------
 
 LABEL maintener="arziel12@gmail.com"
+
+
 WORKDIR /var/docker
 
 RUN rm -rf /var/lib/apt/lists/*

@@ -1,12 +1,12 @@
 # -------------------------------------------------------------
-# @Generated Čt dub 18 10:49:26 CEST 2019
+# @Generated Pá dub  5 15:10:21 CEST 2019
 #
 # Don't edit this file directly!
 # For edit use Docker file in root directory & run ./copy.sh
 # to regenerate
 # -------------------------------------------------------------
 
-FROM php:7.2-fpm
+FROM php:7.3-fpm
 
 RUN set -e && \
 	apt-get update && apt-get install --no-install-recommends -y \
@@ -20,7 +20,6 @@ RUN set -e && \
         telnet \
         unzip \
         openssl \
-        libzip-dev \
         zlib1g-dev \
 	&& rm -rf /var/lib/apt/lists/*
 
@@ -70,8 +69,6 @@ RUN set -e \
 # -----------------------------------------------
 
 LABEL maintener="arziel12@gmail.com"
-
-
 WORKDIR /var/docker
 
 RUN rm -rf /var/lib/apt/lists/*
