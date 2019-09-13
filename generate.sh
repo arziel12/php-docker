@@ -37,7 +37,7 @@ _gd() {
 
 _generate 7.2 7.2-fpm
 _generate 7.3 7.3-fpm
-_generate 7.4 7.4-fpm
+_generate 7.4 7.4-rc-fpm
 
 _gd 7.2 7.2-gd
 _gd 7.3 7.3-gd
