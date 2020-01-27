@@ -1,10 +1,4 @@
-# -------------------------------------------------------------
-# @Generated Po led 27 12:33:34 CET 2020
-#
-# Don't edit this file directly!
-# For edit use Docker file in root directory & run ./copy.sh
-# to regenerate
-# -------------------------------------------------------------
+
 
 FROM php:7.3-fpm
 
@@ -83,6 +77,11 @@ RUN set -e && \
 
 RUN docker-php-ext-install soap
 
+# -----------------------------------------------
+# Sentry CLI
+# -----------------------------------------------
+
+RUN curl -sL https://sentry.io/get-cli/ | bash && sentry-cli --help
 
 # -----------------------------------------------
 # etc.

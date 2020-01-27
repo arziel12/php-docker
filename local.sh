@@ -21,3 +21,7 @@ set -e
 
 docker build 7.4 --tag arziel/php:7.4 --no-cache
 docker build 7.4-gd --tag arziel/php:7.4-gd
+
+
+docker build dotykacka --tag arziel/php:dotykacka
+
