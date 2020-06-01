@@ -1,5 +1,5 @@
 # -------------------------------------------------------------
-# @Generated Ne úno 16 19:22:20 CET 2020
+# @Generated Po čen  1 09:20:30 CEST 2020
 #
 # Don't edit this file directly!
 # For edit use Docker file in root directory & run ./copy.sh
@@ -24,6 +24,7 @@ RUN set -e && \
         libxml2 \
         zlib1g-dev \
 	&& rm -rf /var/lib/apt/lists/*
+
 RUN docker-php-ext-install pdo pdo_mysql mysqli zip bcmath
 
 # -----------------------------------------------

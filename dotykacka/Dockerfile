@@ -1,5 +1,4 @@
 
-
 FROM php:7.3-fpm
 
 RUN set -e && \
@@ -93,3 +92,5 @@ LABEL maintener="arziel12@gmail.com"
 WORKDIR /var/docker
 
 RUN rm -rf /var/lib/apt/lists/*
+
+USER www-data
