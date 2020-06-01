@@ -92,5 +92,3 @@ LABEL maintener="arziel12@gmail.com"
 WORKDIR /var/docker
 
 RUN rm -rf /var/lib/apt/lists/*
-
-USER www-data
