@@ -6,7 +6,7 @@
 # to regenerate
 # -------------------------------------------------------------
 
-FROM php:7.4-rc-fpm
+FROM php:7.4-fpm
 
 RUN set -e && \
 	apt-get update && apt-get install --no-install-recommends -y \
@@ -24,7 +24,6 @@ RUN set -e && \
         libxml2 \
         zlib1g-dev \
 	&& rm -rf /var/lib/apt/lists/*
-
 RUN docker-php-ext-install pdo pdo_mysql mysqli zip bcmath
 
 # -----------------------------------------------
