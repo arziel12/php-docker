@@ -25,6 +25,7 @@ RUN set -e && \
         zlib1g-dev \
         nodejs \
 		curl \
+		gnupg2 \
 		apt-transport-https \
 	&& rm -rf /var/lib/apt/lists/*
 
