@@ -24,6 +24,8 @@ RUN set -e && \
         libxml2 \
         zlib1g-dev \
         nodejs \
+		curl \
+		apt-transport-https \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install pdo pdo_mysql mysqli zip bcmath
