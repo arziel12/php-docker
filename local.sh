@@ -10,13 +10,16 @@ _b() {
 
 #
 #_b 7.2 &&  _b 7.2-gd \
- _b 7.3 &&  _b 7.3-gd
+# _b 7.3 &&  _b 7.3-gd
 #& _b 7.4 &&  _b 7.4-gd \
 #& wait
 #
 
 
 set -e
+
+docker pull php:7.4-fpm
+docker pull php:7.4
 
 
 docker build 7.4 --tag arziel/php:7.4 --no-cache

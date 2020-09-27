@@ -6,23 +6,11 @@
 # to regenerate
 # -------------------------------------------------------------
 
-FROM php:7.3-fpm
+FROM arziel:7.4-node
 
 RUN set -e && \
 	apt-get update && apt-get install --no-install-recommends -y \
-		wget \
-		rsyslog \
-        libfreetype6-dev \
-        libjpeg62-turbo-dev \
-        libmcrypt-dev \
-        ssh \
-        git \
-        telnet \
-        unzip \
-        openssl \
-        libzip-dev \
-        libxml2 \
-        zlib1g-dev \
+		nodejs
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install pdo pdo_mysql mysqli zip bcmath

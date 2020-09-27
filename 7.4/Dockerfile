@@ -27,6 +27,7 @@ RUN set -e && \
 		curl \
 		gnupg2 \
 		apt-transport-https \
+		npm \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install pdo pdo_mysql mysqli zip bcmath
