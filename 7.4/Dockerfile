@@ -96,6 +96,11 @@ RUN set -e && \
 
 RUN docker-php-ext-install soap
 
+# -----------------------------------------------
+# Sentry CLI
+# -----------------------------------------------
+
+RUN curl -sL https://sentry.io/get-cli/ | bash && sentry-cli --help
 
 # -----------------------------------------------
 # etc.
