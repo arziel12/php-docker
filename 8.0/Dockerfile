@@ -102,6 +102,13 @@ RUN docker-php-ext-install soap
 
 RUN curl -sL https://sentry.io/get-cli/ | bash && sentry-cli --help
 
+
+# -----------------------------------------------
+# CI Coverage
+# -----------------------------------------------
+
+RUN pecl install pcov
+
 # -----------------------------------------------
 # etc.
 # -----------------------------------------------
