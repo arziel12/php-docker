@@ -2,10 +2,8 @@
 
 mkdir -p out
 
-./generate.sh
-
 _b() {
-	docker build $1 --tag arziel/php:$1 > out/$1.log
+  docker build $1 --tag arziel/php:$1 >out/$1.log
 }
 
 #
@@ -15,16 +13,6 @@ _b() {
 #& wait
 #
 
-
 set -e
 
-docker pull php:7.4-fpm
-docker pull php:7.4
-
-
-docker build 7.4 --tag arziel/php:7.4 --no-cache
-docker build 7.4-gd --tag arziel/php:7.4-gd
-
-
-docker build dotykacka --tag arziel/php:dotykacka
-
+docker build rust --tag arziel/php:rust
